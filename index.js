@@ -14,6 +14,13 @@ app.get('/', function(request, response) {
   response.render('pages/index')
 });
 
+app.get('/ajax', function(request, response) {
+	var obj = {
+		data: 123,
+	};
+  	response.status(200).send(data);
+});
+
 app.get('/cool', function(request, response) {
   response.send(cool());
 });
