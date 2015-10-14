@@ -18,7 +18,7 @@ app.get('/ajax', function(request, response) {
 	var obj = {
 		data: 123,
 	};
-  	response.status(200).send(data);
+  	response.status(200).send(obj);
 });
 
 app.get('/cool', function(request, response) {
